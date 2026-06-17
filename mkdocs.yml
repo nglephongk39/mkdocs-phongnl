@@ -3,6 +3,7 @@ site_description: A polished technical documentation site.
 site_author: PhongNL
 
 repo_name: phongnl/docs-phongnl
+repo_url: https://github.com/phongnl/docs-phongnl
 
 theme:
   name: material
@@ -24,8 +25,8 @@ theme:
       example: material/test-tube
       quote: material/format-quote-close
   font:
-    text: Inter
-    code: JetBrains Mono
+    text: Google Sans Flex
+    code: Google Sans Code
   features:
     - announce.dismiss
     - content.action.edit
@@ -68,6 +69,9 @@ theme:
 nav:
   - Getting started:
       - Overview: index.md
+  - GitHub:
+      - Create a SSH key from WLS: github.md
+      - Deploy MkDocs to Vercel: github/deploy-mkdocs-vercel.md
   - Guides:
       - Overview: index.md
   - Reference:
@@ -122,7 +126,8 @@ extra:
       link: https://github.com/phongnl
       name: PhongNL on GitHub
 
-extra_css: []
+extra_css:
+  - stylesheets/fonts.css
 extra_javascript: []
 
 copyright: Copyright &copy; 2026 PhongNL
